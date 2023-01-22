@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+
+        <div class="field">
+            <label for="hours">Hours</label>
+            <br/>
+            <input type="number" class="hours" value="0" disabled/>
+        </div>
+
+        <div class="field">
+            <label for="minutes">Minutes</label>
+            <br/>
+            <input type="number" class="minutes" value="0" disabled/>
+        </div>
+
+        <div class="field">
+            <label id="seconds-label" for="seconds">Seconds</label>
+            <br/>
+            <input type="number" class="seconds" value="0" disabled/>
+        </div>
+
+        <br/>
+
+        <button type="button" class="startButton" onclick="start()">Start</button>
+        <button type="button" class="stopButton" onclick="stop()" disabled>Stop</button>
+        <button type="button" class="resetButton" onclick="reset()" disabled>Reset</button>
+
+    </body>
+
+</html>
